@@ -20,10 +20,6 @@ header-includes: |
 \fancyhead[L]{\textcolor{gray}{Candidate: Jane Doe}}
 \fancyhead[C]{\textcolor{gray}{Statement of Purpose}}
 \fancyhead[R]{\textcolor{gray}{jane.doe@school.edu}}
-I was born in Michigan.
+I am applying to **the University of Chicago**’s PhD program because **UChicago** is awesome. 
 
-I have published in \textit{Science}.
-
-I am applying to the University of Chicago’s PhD program because UChicago is awesome. 
-
-UChicago is my dream school.
+*UChicago is my dream school.*

@@ -1,4 +1,4 @@
-<!-- ![](https://img.shields.io/pypi/pyversions/crisscross) -->
+![](https://img.shields.io/pypi/pyversions/crisscross)
 
 # CrissCross
 
@@ -48,18 +48,23 @@ pip3 install crisscross
 
 Here are some sample use cases of CrissCross, ordered by increasing complexity. 
 
-- [Recursive Inclusion](examples/lang): Generate PDFs of the same file with keywords in different languages. 
-- [Graduate School Application](examples/app): Generate personal statements customized for different schools. 
-- [Quiz](examples/quiz): Generate quizzes and their solutions for 2 different sections using the same template. 
+- [English and Spanish](examples/lang): Generate PDFs of the same file with keywords in different languages. 
+- [PhD Applications](examples/app): Generate personal statements customized for different schools. 
+- [Weekly Quiz](examples/quiz): Generate quizzes and their solutions for 2 different sections using the same template. 
   - The examples uses `crisscross combine` to take the "Cartesian product" of different sets of YAML metadata files, and `crisscross process` to generate PDF files from them. 
 
-Section 101 Original            |  Section 102 Original
-:-------------------------:|:-------------------------:
-![](screenshots/quiz1_101.png)  |  ![](screenshots/quiz1_102.png)
+Here's a sneak peek of the [PhD applications](examples/app) example. CrissCross allows you to from a template that looks like this:
 
-Section 101 Solutions            |  Section 102 Solutions
+```markdown
+!INCLUDE asis "examples/app/template.md"
+```
+
+To PDFs like these:
+
+Michigan            |  UChicago
 :-------------------------:|:-------------------------:
-![](screenshots/quiz1_101_soln.png)  |  ![](screenshots/quiz1_102_soln.png)
+![](https://raw.githubusercontent.com/pnlng/crisscross/master/screenshots/michigan.png)  |  ![](https://raw.githubusercontent.com/pnlng/crisscross/master/screenshots/uchicago.png)
+
 
 ## Usage
 

@@ -13,11 +13,7 @@ University of Michigan|University of Chicago
 My `template.md` looks like this:
 
 ```
-I was born in Michigan.
-
-I have published in \textit{Science}.
-
-I am applying to {{school_alt_name}}’s PhD program because {{school}} is awesome. 
+I am applying to **{{school_alt_name}}**’s PhD program because **{{school}}** is awesome. 
 
 !INCLUDE "custom/{{school}}_last.md"
 ```
@@ -33,7 +29,7 @@ custom/
 The one for Michigan, `Michigan_last.md`, looks like this:
 
 ```markdown
-Michigan is where home is. 
+*Michigan is where home is.*
 ```
 
 I also have a separate `header.md` that contains a [YAML metadata block](https://pandoc.org/MANUAL.html#extension-yaml_metadata_block), which tells pandoc how to style my PDF. It contains LaTeX commands that control the styling of the PDF, which pandoc will include in the header of an intermediary LaTeX file. 

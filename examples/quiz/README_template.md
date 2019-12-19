@@ -1,6 +1,4 @@
-# Example: Application
-
-# Example: Quiz
+# Example: Weekly Quiz
 
 This example is an advanced use case of CrissCross. 
 

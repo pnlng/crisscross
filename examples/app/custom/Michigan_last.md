@@ -1,1 +1,1 @@
-Michigan is where home is. 
+*Michigan is where home is.*

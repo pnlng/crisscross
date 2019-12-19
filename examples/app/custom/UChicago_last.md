@@ -1,1 +1,1 @@
-UChicago is my dream school.
+*UChicago is my dream school.*

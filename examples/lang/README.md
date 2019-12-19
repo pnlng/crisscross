@@ -1,4 +1,4 @@
-# Example: Recursive Inclusion
+# Example: English and Spanish
 
 This simple example demonstrates CrissCross's ability to recursively include files. 
 
