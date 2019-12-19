@@ -1,4 +1,4 @@
-![](https://img.shields.io/pypi/pyversions/crisscross)
+<!-- ![](https://img.shields.io/pypi/pyversions/crisscross) -->
 
 # CrissCross
 
