@@ -37,3 +37,8 @@ maindoc:
 docs: exdoc maindoc
 
 all: app quiz lang docs
+
+pypi:
+	rm -rf dist
+	python3 setup.py sdist bdist_wheel
+	python3 -m twine upload dist/*

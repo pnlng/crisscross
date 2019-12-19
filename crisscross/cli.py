@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import click
 from glob import glob
-from crisscross.core import *
-from crisscross.util import *
+from .core import *
+from .util import *
 import os
 import poyo
 import chevron

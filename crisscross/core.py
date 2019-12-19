@@ -6,7 +6,7 @@ import os
 import chevron
 import re
 import tempfile
-from crisscross.util import *
+from .util import *
 
 
 def gen_text(var_dict, ren_path_obj, text_path_obj):
