@@ -6,7 +6,7 @@ CrissCross is a Markdown-centric templating engine.
 
 Some of its features: 
 
-- Replace Mustache-style placeholders ``
+- Replace Mustache-style placeholders
 - Include/import subfiles `!INCLUDE "subfile.md"`
 - Convert to other formats using [pandoc](https://pandoc.org/) or [rmarkdown](https://github.com/rstudio/rmarkdown)
 
@@ -158,8 +158,8 @@ Adding `asis` after the inclusion tag will tell CrissCross to include the file a
 
 ## Roadmap
 
--[] Add the option to render inline placeholders as is
--[] Add logic support
+- [ ] Add the option to render inline placeholders as is
+- [ ] Add logic support
 
 ## Built With
 
