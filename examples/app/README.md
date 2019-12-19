@@ -2,6 +2,8 @@
 
 I'm applying to PhD programs. The main body of my personal statement is the same for each program, except for places where I mention the name of the program. I also have an end paragraph tailored to each program. 
 
+
+
 ## Templates
 
 My `template.md` looks like this:
@@ -94,10 +96,5 @@ docs/
     UChicago.md
     Uchicago.pdf
 ```
-
-The resulting PDFs: 
-
-![](../../screenshots/michigan.png)
-![](../../screenshots/uchicago.png)
 
 In this example, we've only used the default settings of the `process` command. CrissCross is much more customizable than that! Check out the [main documentation](../../) for more details.
