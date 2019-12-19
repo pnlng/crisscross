@@ -1,0 +1,3 @@
+section: 101
+day: Tuesday
+comment: \specialcomment{answer}{\begingroup\hspace{1pt}\begin{sol}\sffamily\small\textbf{Answer}}{\end{sol}\endgroup}
