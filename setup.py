@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setup(
     name='crisscross',
-    version='0.1.0',
+    version='0.1.1',
     author='pnlng',
     description='',
     long_description=long_description,
