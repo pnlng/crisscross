@@ -2,7 +2,11 @@
 
 I'm applying to PhD programs. The main body of my personal statement is the same for each program, except for places where I mention the name of the program. I also have an end paragraph tailored to each program. 
 
+My desired results:
 
+University of Michigan|University of Chicago
+:---:|:---:|
+![](../../screenshots/michigan.png)|![](../../screenshots/uchicago.png)
 
 ## Templates
 
@@ -96,5 +100,6 @@ docs/
     UChicago.md
     Uchicago.pdf
 ```
+
 
 In this example, we've only used the default settings of the `process` command. CrissCross is much more customizable than that! Check out the [main documentation](../../) for more details.

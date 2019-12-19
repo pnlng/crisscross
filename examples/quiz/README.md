@@ -6,6 +6,17 @@ This example is an advanced use case of CrissCross.
 
 Suppose I teach two sections of the same course, 101 and 102. Each week, I'll quiz my students on the math they've learned. Afterwards, I'll give them a copy of the solutions. The two sections will receive different versions of the quiz each week. 
 
+Here are the results I want:
+
+Section 101 Original            |  Section 102 Original
+:-------------------------:|:-------------------------:
+![](../../screenshots/quiz1_101.png)  |  ![](../../screenshots/quiz1_102.png)
+
+Section 101 Solutions            |  Section 102 Solutions
+:-------------------------:|:-------------------------:
+![](../../screenshots/quiz1_101_soln.png)  |  ![](../../screenshots/quiz1_102_soln.png)
+
+## The Problem
 
 For each version, I'd like to write the questions and solutions in a single file. (The reasons are a) it'll easier for me to keep track of the questions when I write the solutions, and b) students will be able to contextualize the solutions when they receive my answer key.) I decide to use the LaTeX package [`comment`](https://www.ctan.org/pkg/comment) together with CrissCross to control whether the solutions will be shown in my PDF.  
 
@@ -148,6 +159,16 @@ quizzes/
     quiz1_102_soln.pdf
     quiz1_102_soln.tex
 ```
+
+The results:
+
+Section 101 Original            |  Section 102 Original
+:-------------------------:|:-------------------------:
+![](../../screenshots/quiz1_101.png)  |  ![](../../screenshots/quiz1_102.png)
+
+Section 101 Solutions            |  Section 102 Solutions
+:-------------------------:|:-------------------------:
+![](../../screenshots/quiz1_101_soln.png)  |  ![](../../screenshots/quiz1_102_soln.png)
 
 Next week, I will only need to create `quiz2_base_101.md` and `quiz2_base_102.md`, and modify my command a little bit, by using `-V number:2 -V date:'Jan 8, 2001'`. 
 

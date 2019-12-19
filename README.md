@@ -53,6 +53,14 @@ Here are some sample use cases of CrissCross, ordered by increasing complexity.
 - [Quiz](examples/quiz): Generate quizzes and their solutions for 2 different sections using the same template. 
   - The examples uses `crisscross combine` to take the "Cartesian product" of different sets of YAML metadata files, and `crisscross process` to generate PDF files from them. 
 
+Section 101 Original            |  Section 102 Original
+:-------------------------:|:-------------------------:
+![](screenshots/quiz1_101.png)  |  ![](screenshots/quiz1_102.png)
+
+Section 101 Solutions            |  Section 102 Solutions
+:-------------------------:|:-------------------------:
+![](screenshots/quiz1_101_soln.png)  |  ![](screenshots/quiz1_102_soln.png)
+
 ## Usage
 
 ### Basic Usage
