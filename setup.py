@@ -16,8 +16,10 @@ setup(
     url='https://github.com/pnlng/crisscross',
     classifiers=[
         'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
+        'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
+        'Topic :: Text Processing',
+        'Topic :: Utilities'
       ],
     packages=find_packages(),
     include_package_data=True,
