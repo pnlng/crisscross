@@ -1,3 +1,5 @@
+![](https://img.shields.io/pypi/pyversions/crisscross)
+
 # CrissCross
 
 CrissCross is a Markdown-centric templating engine. 
@@ -20,13 +22,16 @@ Some of its features:
     - [Commands](#commands)
     - [Process](#process)
     - [Combine](#combine)
+    - [File Inclusion](#file-inclusion)
+  - [Roadmap](#roadmap)
+  - [Built With](#built-with)
+  - [Acknowledgments](#acknowledgments)
+    - [Other related projects](#other-related-projects)
 </details>
 
 ## Getting Started
 
 ### Prerequisites
-
-![](https://img.shields.io/pypi/pyversions/crisscross)
 
 Crisscross requires Python 3.
 
@@ -132,3 +137,40 @@ Options:
                                (Default: disabled)
   -h, --help                   Show this message and exit.
 ```
+
+### File Inclusion
+
+Two inclusion tags are supported:
+
+- `!INCLUDE "foo.md"`, in the style of [Markdown Preprocessor](https://github.com/jreese/markdown-pp#includes), and
+- `@import "foo.md"`, in the style of [Markdown Preview Enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/file-imports)
+  - However, unlike MPE, CrissCross does not support `<!-- @import "foo.md" -->`. 
+
+Adding `asis` after the inclusion tag will tell CrissCross to include the file as is, and not to further process it: `!INCLUDE asis "foo.md"`
+
+## Roadmap
+
+-[] Add the option to render inline placeholders as is
+-[] Add logic support
+
+## Built With
+
+This project uses the following open source libraries.
+
+- [pallets/click](https://github.com/pallets/click): Python composable command line interface toolkit
+- [hackebrot/poyo](https://github.com/hackebrot/poyo): A lightweight YAML Parser for Python
+- [noahmorrison/chevron](https://github.com/noahmorrison/chevron): A Python implementation of mustache
+
+## Acknowledgments
+
+This project is heavily inspired by:
+
+- [alpianon/include-pandoc](https://github.com/alpianon/include-pandoc): A wrapper for pandoc to pre-process includes
+- [michaelstepner/pandoc-mustache](https://github.com/michaelstepner/pandoc-mustache): Pandoc filter for variable substitution using Mustache syntax
+  
+### Other related projects
+
+- [jreese/markdown-pp](https://github.com/jreese/markdown-pp): Preprocessor for Markdown files to generate a table of contents and other documentation needs
+- [DCsunset/pandoc-include](https://github.com/DCsunset/pandoc-include): Pandoc filter to allow file includes
+- [owickstrom/pandoc-include-code](https://github.com/owickstrom/pandoc-include-code): A Pandoc filter for including code from source files
+- [MrToph/pandoc-code-file-filter](https://github.com/MrToph/pandoc-code-file-filter): A filter for pandoc to include sections of code from a file
