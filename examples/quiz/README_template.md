@@ -68,7 +68,7 @@ yaml_combined/
 
 And `101_orig.yaml`, say, would just be a concatenation of `101.yaml` and `orig.yaml`.
 
-```
+```YAML
 !INCLUDE asis "yaml_combined/101_orig.yaml"
 ```
 
@@ -76,13 +76,13 @@ And `101_orig.yaml`, say, would just be a concatenation of `101.yaml` and `orig.
 
 `template.md` is the master template I'll be using throughout the semester. It makes reference to the week number and the section number of my quiz. 
 
-```
+```markdown
 !INCLUDE asis "template.md"
 ```
 
 Quiz 1 for section 101 looks like this:
 
-```
+```markdown
 !INCLUDE asis "quiz1_base_101.md"
 ```
 
@@ -91,7 +91,7 @@ Quiz 1 for section 101 looks like this:
 
 We're finally ready to generate the quiz files. 
 
-```
+```shell
 crisscross process -y yaml_combined/*.yaml -V number:1 -V date:'Jan 1, 2001' template.md -o quizzes/quiz{{number}}_{{id}}.pdf -r rmarkdown
 ```
 

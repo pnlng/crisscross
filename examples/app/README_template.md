@@ -12,7 +12,7 @@ University of Michigan|University of Chicago
 
 My `template.md` looks like this:
 
-```
+```markdown
 !INCLUDE asis "template.md"
 ```
 

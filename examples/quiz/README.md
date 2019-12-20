@@ -69,7 +69,7 @@ yaml_combined/
 
 And `101_orig.yaml`, say, would just be a concatenation of `101.yaml` and `orig.yaml`.
 
-```
+```YAML
 section: 101
 day: Tuesday
 comment: \excludecomment{answer}
@@ -79,7 +79,7 @@ comment: \excludecomment{answer}
 
 `template.md` is the master template I'll be using throughout the semester. It makes reference to the week number and the section number of my quiz. 
 
-```
+```markdown
 ---
 output: 
   pdf_document:
@@ -105,7 +105,7 @@ header-includes: |
 
 Quiz 1 for section 101 looks like this:
 
-```
+```markdown
 # Quiz \# 1
 
 ## True/False
@@ -132,7 +132,7 @@ True.
 
 We're finally ready to generate the quiz files. 
 
-```
+```shell
 crisscross process -y yaml_combined/*.yaml -V number:1 -V date:'Jan 1, 2001' template.md -o quizzes/quiz_compiled.pdf -r rmarkdown
 ```
 
