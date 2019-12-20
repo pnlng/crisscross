@@ -11,7 +11,9 @@ Some of its features:
 - Convert to other formats using [pandoc](https://pandoc.org/) or [rmarkdown](https://github.com/rstudio/rmarkdown)
 
 <details>
+
 <summary>Table of Contents</summary>
+
 - [CrissCross](#crisscross)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
@@ -48,12 +50,12 @@ pip3 install crisscross
 
 Here are some sample use cases of CrissCross, ordered by increasing complexity. 
 
-- [English and Spanish](examples/lang): Generate PDFs of the same file with keywords in different languages. 
-- [PhD Applications](examples/app): Generate personal statements customized for different schools. 
-- [Weekly Quiz](examples/quiz): Generate quizzes and their solutions for 2 different sections using the same template. 
+- [English and Spanish](https://github.com/pnlng/crisscross/tree/master/examples/lang): Generate PDFs of the same file with keywords in different languages. 
+- [PhD Applications](https://github.com/pnlng/crisscross/tree/master/examples/app): Generate personal statements customized for different schools. 
+- [Weekly Quiz](https://github.com/pnlng/crisscross/tree/master/examples/quiz): Generate quizzes and their solutions for 2 different sections using the same template. 
   - The examples uses `crisscross combine` to take the "Cartesian product" of different sets of YAML metadata files, and `crisscross process` to generate PDF files from them. 
 
-Here's a sneak peek of the [PhD applications](examples/app) example. CrissCross allows you to from a template that looks like this:
+Here's a sneak peek of the [PhD applications](https://github.com/pnlng/crisscross/tree/master/examples/app) example. CrissCross allows you to from a template that looks like this:
 
 ```markdown
 I am applying to **{{school_alt_name}}**’s PhD program because **{{school}}** is awesome. 
