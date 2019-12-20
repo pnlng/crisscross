@@ -1,8 +1,8 @@
 ![](https://img.shields.io/pypi/pyversions/crisscross)
 
-# CrissCross
+<h1 align="center">CrissCross</h1>
 
-CrissCross is a Markdown-centric templating engine. 
+CrissCross is a Markdown-centric templating engine for offline documents. 
 
 Some of its features: 
 
@@ -14,25 +14,24 @@ Some of its features:
 
 <summary>Table of Contents</summary>
 
-- [CrissCross](#crisscross)
-  - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-  - [Examples](#examples)
-  - [Usage](#usage)
-    - [Commands](#commands)
-    - [Process](#process)
-      - [Example](#example)
-      - [Options](#options)
-    - [Combine](#combine)
-      - [Example](#example-1)
-      - [Options](#options-1)
-    - [File Inclusion](#file-inclusion)
-    - [Key-Value Pairs](#key-value-pairs)
-  - [Roadmap](#roadmap)
-  - [Built With](#built-with)
-  - [Acknowledgments](#acknowledgments)
-    - [Other related projects](#other-related-projects)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Examples](#examples)
+- [Usage](#usage)
+  - [Commands](#commands)
+  - [Process](#process)
+    - [Example](#example)
+    - [Options](#options)
+  - [Combine](#combine)
+    - [Example](#example-1)
+    - [Options](#options-1)
+  - [File Inclusion](#file-inclusion)
+  - [Key-Value Pairs](#key-value-pairs)
+- [Roadmap](#roadmap)
+- [Built With](#built-with)
+- [Acknowledgments](#acknowledgments)
+  - [Other related projects](#other-related-projects)
 </details>
 
 ## Getting Started
@@ -40,7 +39,7 @@ Some of its features:
 ### Prerequisites
 
 - [Python 3](https://www.python.org/)
-- (optional) either [pandoc](https://github.com/jgm/pandoc), or [rmarkdown](https://github.com/rstudio/rmarkdown) is required to convert files from one format to another
+- (optional) either [pandoc](https://github.com/jgm/pandoc) or [rmarkdown](https://github.com/rstudio/rmarkdown) is required to convert files from one format to another
 - (optional) [LaTeX](https://www.latex-project.org/) is required for PDF generation
 
 ### Installation
