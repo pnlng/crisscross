@@ -39,10 +39,9 @@ Some of its features:
 
 ### Prerequisites
 
-Crisscross requires Python 3.
-
-To convert files from one format to another, crisscross requires either [pandoc](https://github.com/jgm/pandoc), or [rmarkdown](https://github.com/rstudio/rmarkdown).
-
+- [Python 3](https://www.python.org/)
+- (optional) [pandoc](https://github.com/jgm/pandoc), or [rmarkdown](https://github.com/rstudio/rmarkdown) are required to convert files from one format to another, crisscross requires either
+- (optional) [LaTeX](https://www.latex-project.org/) is required for PDF generation
 
 ### Installation
 
