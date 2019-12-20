@@ -20,10 +20,13 @@ Some of its features:
     - [Installation](#installation)
   - [Examples](#examples)
   - [Usage](#usage)
-    - [Basic Usage](#basic-usage)
     - [Commands](#commands)
     - [Process](#process)
+      - [Example](#example)
+      - [Options](#options)
     - [Combine](#combine)
+      - [Example](#example-1)
+      - [Options](#options-1)
     - [File Inclusion](#file-inclusion)
   - [Roadmap](#roadmap)
   - [Built With](#built-with)
@@ -70,14 +73,6 @@ Michigan            |  UChicago
 
 ## Usage
 
-### Basic Usage
-
-Convert `TEMPLATE.md` into PDF, using key-value pairs specified in `VARS.yaml`:
-
-```shell
-crisscross process TEMPLATE.md -y VARS.yaml -o OUTDIR/TEMPLATE.pdf
-```
-
 ### Commands
 
 There are two commands, `process` and `combine`.
@@ -86,6 +81,15 @@ There are two commands, `process` and `combine`.
 
 `process` is the command that processes the template files. 
 
+#### Example
+
+Convert `TEMPLATE.md` into PDF, using key-value pairs specified in `VARS.yaml`:
+
+```shell
+crisscross process TEMPLATE.md -y VARS.yaml -o OUTDIR/TEMPLATE.pdf
+```
+#### Options
+
 ```
 !INCLUDE asis "help/process.md"
 ```
@@ -93,6 +97,28 @@ There are two commands, `process` and `combine`.
 ### Combine
 
 `combine` is a helper command takes the "Cartesian product" of lists of files. 
+
+#### Example
+
+```shell
+crisscross combine a1,a2 b1,b2 -o out/
+```
+
+would generate under `out/`
+
+```
+out/
+  a1_b1
+  a1_b2
+  a2_b1
+  a2_b2
+```
+
+where `a1_b1` is a concatenation of `a1` and `b1`, `a1_b2` a concatenation of `a1` and `b2`, and so on. 
+
+See the [quiz](https://github.com/pnlng/crisscross/tree/master/examples/quiz) example for a real-world use case of `combine.`
+
+#### Options
 
 ```shell
 !INCLUDE asis "help/combine.md"
