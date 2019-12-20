@@ -28,6 +28,7 @@ Some of its features:
       - [Example](#example-1)
       - [Options](#options-1)
     - [File Inclusion](#file-inclusion)
+    - [Key-Value Pairs](#key-value-pairs)
   - [Roadmap](#roadmap)
   - [Built With](#built-with)
   - [Acknowledgments](#acknowledgments)
@@ -112,7 +113,7 @@ Options:
   --open-ren / --no-open-ren      Whether to open the rendered files
                                   automatically. 
                                   (Default: enabled)
-  --open-text / -no-open-text     Whether to open the generated text files
+  --open-text / --no-open-text    Whether to open the generated text files
                                   automatically. 
                                   (Default: disabled)
   -a, --args TEXT                 A string of arguments to be passed on to
@@ -190,6 +191,21 @@ Two inclusion tags are supported:
   - However, unlike MPE, CrissCross does not support `<!-- @import "foo.md" -->`. 
 
 Adding `asis` after the inclusion tag will tell CrissCross to include the file as is, and not to further process it: `!INCLUDE asis "foo.md"`
+
+### Key-Value Pairs
+
+Key-value pairs tell CrissCross how to replace placeholder expressions. They can be either placed in YAML files:
+
+```yaml
+lang: English
+level: Level
+```
+
+Alternatively, they could be supply using the `-V` option:
+
+```
+crisscross process -V key1:value1 -V key2:value2 TEMPLATE -o OUTFILE
+```
 
 ## Roadmap
 

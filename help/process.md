@@ -17,7 +17,7 @@ Options:
   --open-ren / --no-open-ren      Whether to open the rendered files
                                   automatically. 
                                   (Default: enabled)
-  --open-text / -no-open-text     Whether to open the generated text files
+  --open-text / --no-open-text    Whether to open the generated text files
                                   automatically. 
                                   (Default: disabled)
   -a, --args TEXT                 A string of arguments to be passed on to

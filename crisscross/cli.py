@@ -25,7 +25,7 @@ def cli(ctx):
 @click.option('--no-yaml', default=False, help='Use no YAML files. In this case, key-value pairs must be supplied with -k --key-value. \n(Default: disabled)', is_flag=True)
 @click.option('-o', '--out', default='docs/{{id}}.pdf', help='Schema for the path to an output file. Variables are accepted. \n(Default: docs/{{id}}.pdf)', type=click.Path(resolve_path=True))
 @click.option('--open-ren/--no-open-ren', default=True, help='Whether to open the rendered files automatically. \n(Default: enabled)')
-@click.option('--open-text/-no-open-text', default=False, help='Whether to open the generated text files automatically. \n(Default: disabled)')
+@click.option('--open-text/--no-open-text', default=False, help='Whether to open the generated text files automatically. \n(Default: disabled)')
 @click.option('-a', '--args', default='', help='A string of arguments to be passed on to pandoc. Passing arguments to rmarkdown not supported. If there are spaces, the string should be quoted.')
 @click.option('-r', '--render', default='pandoc', type=click.Choice(['pandoc', 'rmarkdown']), help='Render using vanilla pandoc or rmarkdown, or do not render at all. \n(Default: pandoc)')
 @click.option('--no-render', default=False, help='Do not render the files with pandoc or rmarkdown. Only do variable substitution or file inclusion. \n(Default: disabled)', is_flag=True)
