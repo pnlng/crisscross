@@ -34,7 +34,7 @@ The one for Michigan, `Michigan_last.md`, looks like this:
 
 I also have a separate `header.md` that contains a [YAML metadata block](https://pandoc.org/MANUAL.html#extension-yaml_metadata_block), which tells pandoc how to style my PDF. It contains LaTeX commands that control the styling of the PDF, which pandoc will include in the header of an intermediary LaTeX file. 
 
-```yaml
+```markdown
 ---
 output: 
   pdf_document
