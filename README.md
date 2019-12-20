@@ -59,7 +59,7 @@ Here are some sample use cases of CrissCross, ordered by increasing complexity.
 - [Weekly Quiz](https://github.com/pnlng/crisscross/tree/master/examples/quiz): Generate quizzes and their solutions for 2 different sections using the same template. 
   - The examples uses `crisscross combine` to take the "Cartesian product" of different sets of YAML metadata files, and `crisscross process` to generate PDF files from them. 
 
-Here's a sneak peek of the [PhD applications](https://github.com/pnlng/crisscross/tree/master/examples/app) example. CrissCross allows you to from a template that looks like this:
+Here's a sneak peek of the [PhD applications](https://github.com/pnlng/crisscross/tree/master/examples/app) example. CrissCross allows you to go from a template that looks like this:
 
 ```markdown
 I am applying to **{{school_alt_name}}**’s PhD program because **{{school}}** is awesome. 
@@ -210,6 +210,7 @@ crisscross process -V key1:value1 -V key2:value2 TEMPLATE -o OUTFILE
 ## Roadmap
 
 - [ ] Add the option to render inline placeholders as is
+- [ ] Add the option to use different patterns for placeholder expressions
 - [ ] Add logic support
 
 ## Built With

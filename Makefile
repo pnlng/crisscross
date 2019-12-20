@@ -1,6 +1,6 @@
 CC = crisscross
 CCP = $(CC) process
-CCPPLAIN = $(CCP) --no-yaml --no-render --no-open-text
+CCPPLAIN = $(CCP) --no-yaml --no-render --no-open-text --no-open-ren
 EXDIR = examples
 APPDIR = $(EXDIR)/app
 QUIZDIR = $(EXDIR)/quiz
